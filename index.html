@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+
+	<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	<link rel="stylesheet" href="index.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Suomessa kielletyt elokuvat</title>
+</head>
+
+<body>
+
+	<header>
+
+		<div class="flex-container-header">
+  			<div id="header-logo-box"><h1>Suomessa<br> kielletyt<br> elokuvat</h1></div>
+			<div><img src="./images/texas-chainsaw-ad-w400.jpg" alt="Kuva The Texas Chainsaw Massacre -elokuvan mainoksesta"></div>
+			<div><img src="./images/elokuvateatteri-maxim-w400.jpg" alt="Kuva elokuvateatteri Maximista"></div>
+			<div><img src="./images/tarkastuspaatos-w400.jpg" alt="Kuva elokuvatarkastamon päätöksestä"></div>
+			<div><img src="./images/elokuvatarkastamo-w400.jpg" alt="Kuva elokuvatarkastamon sensoreista."></div>
+  		</div>
+
+	</header>
+	
+	<section>
+
+		<div class="flex-container-about">
+			<div class="flex-container-about__about-menu">
+				<button id="aboutPageButton">Tietoa sivustosta</button>
+				<button id="aboutCensorshipButton">Elokuvasensuuri</button>
+				<button id="aboutFurtherReadingButton">Luettavaa aiheesta</button>
+				<button id="aboutMeButton">Ylläpitäjä</button>
+				<button id="aboutContactButton">Ota yhteyttä</button>
+			</div>
+
+			<div class="flex-container-about__about-content">
+				
+				<block id="aboutContent">
+				<div id = aboutPageText><p>Tämän sivuston tarkoitus on luetteloida Suomessa ennakkosensuurin aikakaudella kielletyt elokuvat. Aiheesta verkosta saatavilla olevat tiedot ovat hajallaan, eikä esimerkiksi Kansallisen audiovisuaalisen instituutin ylläpitämästä Elonet-tietokannasta ole tällä haavaa mahdollista hakea elokuvia kieltopäätöksen perusteella. Internet Movie Databasessa on ansiokkaasti merkitty yli tuhanteen elokuvaan niiden kieltostatus Suomessa, mutta sieltä puuttuvat sekä lähteistys että tarkemmat tarkastustiedot. IMDb myös niputtaa yhteen KK- (kokonaan kielletty) ja K18-merkinnät, joista jälkimmäinen merkitsi elokuvan levityskieltoa vasta ns. videolain aikana.</p><p>Edellä kerrottua taustaa vasten iski kipinä koostaa tietokanta, jossa olisi keskitetysti ja mahdollisimman kattavasti esitetty Suomessa kielletyt elokuvat tarkkoine tarkastustietoineen. Lähteenä on käytetty pääasiassa Elonet-sivustoa ja Jari Sedergrenin Taistelu elokuvasensuurista -teosta.</p></div>
+				<div id = aboutCensorshipText><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+				<div id = aboutFurtherReadingText><p><a href='https://sananvapauteen.fi/artikkeli/695' target='_blank'>Sedergren, Jari. Suomessa on koettu sata vuotta elokuvasensuuria. <i>Tiellä sananvapateen.</i></a></p><p><a href='https://suomenkuvalehti.fi/kuvien-takaa/valtion-elokuvatarkastamoa-ajetaan-alas-kuka-paattaa-ikarajoista-tulevaisuudessa/' target='_blank'>Kinnunen, Kalle (9.6.2010). Valtion elokuvatarkastamoa ajetaan alas - kuka päättää ikärajoista tulevaisuudessa? <i>Suomen kuvalehti</i></a></p><p><a href='https://www.elitisti.fi/artikkeli/2016/02/uuno-bond-talo-jossa-ei-leikita-katsaus-suomalaisen-elokuvasensuurin-merkkitapaukseen' target='_blank'>Mustonen, Jari. (15.2.2016) Uuno Bond – talo, jossa ei leikitä: katsaus suomalaisen elokuvasensuurin merkkitapaukseen. <i>Elitisti</i></a></p></div>
+				<div id = aboutMeText><p>Joonas Siironen on oululainen tietotekniikan opiskelija, mediapuuhastelija ja leffanörtti.</p></div>
+				<form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+
+					<!-- Replace with your Access Key -->
+					<input type="hidden" name="access_key" value="d265613b-b214-4a31-8e10-033d0431b0ed">
+					<p>Voit lähettää viestin lomakkeella, jos haluat vaikkapa ehdottaa tietokantaan lisättäväksi sieltä puuttuvaa elokuvaa tai antaa muuta palautetta.</p>
+					<!-- Form Inputs. Each input must have a name="" attribute -->
+					<label for="name">Nimi (valinnainen):</label><br>
+					<input type="text" name="name" id="name"><br>
+					<label for="email">Sähköposti (valinnainen):</label><br>
+					<input type="email" name="email" id="email"><br>
+					<label for="message">Viesti (pakollinen):</label><br>
+					<textarea name="message" required></textarea><br>
+				
+					<!-- Honeypot Spam Protection -->
+					<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+				
+					<!-- Custom Confirmation / Success Page -->
+					<!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+				
+					<button type="submit">Lähetä viesti</button>
+				
+				</form>
+				</block></div>
+				</div>
+		
+	</section>
+
+
+	<main>
+
+		<div class="flex-container-header-for-sidebar-and-table">
+		<h2>Elokuvalista</h2>
+		<div id="header-numberofmovies"></div>
+		</div>
+
+		<div class="flex-container-sidebar-and-table">
+
+			<div class="flex-container-sidebar-and-table__sidebar">
+				<div class="flex-container-sidebar-and-table__sidebar__sidebar-content">
+					<button id="resetFiltersButton">Nollaa suodatin</button>
+					<p> Suodata tuloksia: </p>
+					<details>
+  						<summary>Julkaisuvuosi</summary>
+  						<p id="releaseYears"></p>
+					</details>
+				</div>
+			</div>
+			
+				<div class="flex-container-sidebar-and-table__table">
+				<table class="moviesTable">
+				<thead>
+					<tr>
+					
+					<th data-key="originalName">Alkuperäinen nimi</th>
+					<th data-key="englishName">Englanninkielinen nimi</th>
+					<th data-key="finnishName">Suomenkielinen nimi</th>
+					<th data-key="releaseYear">Julkaisuvuosi</th>
+					<th data-key="director">Ohjaaja</th>
+					<th data-key="country">Maa</th>
+					<th data-key="ageRating">Ikäraja</th>
+					<th data-key="inspectionDate">Tarkastuspäivä</th>
+					<th data-key="inspectionReason">Perustelu</th>
+					<th data-key="finnishPremiere">Suomen ensi-ilta</th>
+					</tr>
+				</thead>
+				<tbody id="tableBody">
+				</tbody>
+				</table>
+
+			</div>
+			
+		</div>
+	</main>
+
+	
+
+	<footer>
+		<p>Tänne alaviitteeseen voisi kirjoittaa jotain tärkeää.</p>
+		 
+	</footer>
+
+	<button id="backToTopButton">Takaisin<br>alkuun</button>
+
+<script src="index.js"></script>
+</body>
+</html>
